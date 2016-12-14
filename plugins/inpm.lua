@@ -1,4 +1,4 @@
-﻿local function pre_process(msg)
+local function pre_process(msg)
 local to = msg.to.type
 local service = msg.service
 	if to == 'user' and msg.fwd_from then
@@ -10,19 +10,19 @@ local service = msg.service
 		if msg.fwd_from.first_name then
 			from_first_name = msg.fwd_from.first_name:gsub("_", " ")
 		else
-			from_first_name = "None"
+			from_first_name = "ندارد"
 		end
 		if msg.fwd_from.last_name then
 			from_last_name = msg.fwd_from.last_name:gsub("_", " ")
 		else
-			from_last_name = "None"
+			from_last_name = "ندارد"
 		end
 		if msg.fwd_from.username then
 			from_username = "@"..msg.fwd_from.username
 		else
-			from_username = "@[none]"
+			from_username = "@[ندارد]"
 		end
-		text = "User From Info:\n\nID: "..from_id.."\nFirst: "..from_first_name.."\nLast: "..from_last_name.."\nUsername: "..from_username
+		text = "User From Info:\n\nآیدی: "..from_id.."\nنام: "..from_first_name.."\nنام خانواندگی: "..from_last_name.."\nنام کاربری: "..from_username
 		send_large_msg(user, text)
 	end
 	return msg
