@@ -260,7 +260,7 @@ function create_config( )
 	"me",
 	"expire"
     },
-    sudo_users = {265037992,0,tonumber(our_id)},--Sudo users
+    sudo_users = {279770600,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[
 	@permag_bots
