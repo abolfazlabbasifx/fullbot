@@ -260,7 +260,7 @@ function create_config( )
 	"me",
 	"expire"
     },
-    sudo_users = {256488117,0,tonumber(our_id)},--Sudo users
+    sudo_users = {118389682,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[
 	@teleguardchannel
